@@ -5,7 +5,7 @@ f = open(text, "r")
 print(f.read())
 
 
-def pickOneMemeber():
+def hammer_pickOneMemeber():
     '''example function'''
 
     teamJDE = ['hammer', 'billy', 'chistina']
@@ -14,7 +14,7 @@ def pickOneMemeber():
 
 
 if __name__ == "__main__":
-    print(pickOneMemeber())
+    print(hammer_pickOneMemeber())
     # print(taskOne())
     # print(taskTwo())
     # print(taskThree())
