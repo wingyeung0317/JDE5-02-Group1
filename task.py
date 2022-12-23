@@ -5,6 +5,7 @@ text = './news.txt'
 f = open(text, "r")
 ftext = f.read()
 print(f.read())
+ftext = f.read()
 
 
 # Hammer example function
@@ -14,7 +15,6 @@ def hammer_pickOneMemeber():
     teamJDE = ['hammer', 'billy', 'chistina']
     result = random.sample(teamJDE, 1)
     return result
-
 
 # Task-1 - count the total number of words in the prargraph that contains vowel characters(a, e, i, o u)
 def taskOne():
@@ -27,7 +27,6 @@ def taskOne():
         if char in vowels:
             tot = tot +1
     f.close()
-
     return(f"\nTotal Vowels are: {tot}")
 
 #Task Three
@@ -39,7 +38,6 @@ def taskThree():
 # Task 4 (Reverse the order of character of each word e.g. I am a boy -> I ma a yob)
 def taskFour(t):
     # Set up variable
-    ftext = f.read()
     word_p = []
     reordered = []
     reordered_p = []
