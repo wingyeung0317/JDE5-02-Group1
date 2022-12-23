@@ -3,6 +3,7 @@ import random
 text = './news.txt'
 f = open(text, "r")
 print(f.read())
+ftext = f.read()
 
 #hammer
 def hammer_pickOneMemeber():
@@ -11,6 +12,21 @@ def hammer_pickOneMemeber():
     teamJDE = ['hammer', 'billy', 'chistina']
     result = random.sample(teamJDE, 1)
     return result
+
+#Task One
+def taskOne():
+    text =str( './news.txt')
+    f = open(text, "r")
+    tot = 0
+    vowels = ['a','e','i','o','u']
+
+    for char in f.read():
+        if char in vowels:
+            tot = tot +1
+    f.close()
+
+    print("\nTotal Vowels are:")
+    print(tot)
 
 #Task Three
 def taskThree():
@@ -21,7 +37,6 @@ def taskThree():
 #Task Four
 def taskFour(t):
     # Set up variable
-    ftext = f.read()
     word_p = []
     reordered = []
     reordered_p = []
@@ -61,7 +76,7 @@ def taskFour(t):
 # RUN
 if __name__ == "__main__":
     print(hammer_pickOneMemeber())
-    # print(taskOne())
+    taskOne()
     # print(taskTwo())
     print(taskThree())
     print(taskFour(ftext))
