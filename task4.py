@@ -12,6 +12,7 @@ def taskFour(t):
     reordered = []
     reordered_p = []
     reordered_text = ''
+    reordered_all = ''
 
     # split to paragraph
     t_p = t.split('\n')
@@ -40,7 +41,8 @@ def taskFour(t):
 
     #Print all paragraph
     for all, p in enumerate(reordered_p):
-        print(reordered_p[all])
+        reordered_all += reordered_p[all] + '\n'
+    return reordered_all
 
 #Result of task 4 ( import news.txt to function (task Four) )
 print(taskFour(ftext))
